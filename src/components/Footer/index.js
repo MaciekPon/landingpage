@@ -4,14 +4,14 @@ import { MainWrapper } from "./styles";
 const Footer = () => {
   var [date, setDate] = useState();
 
-  const DateOfYear = (yr) => {
+  const CheckYear = (yr) => {
     var today = new Date();
     return (yr = today.getFullYear(setDate));
   };
 
   return (
     <MainWrapper>
-      <p>“All about plants” {DateOfYear(date)}</p>
+      <p>“All about plants” {CheckYear(date)}</p>
       <p>
         <span>
           <strong>Any questions?</strong>
