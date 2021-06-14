@@ -50,3 +50,48 @@ export const CloudWrapper = styled.div`
     height: 10rem;
   }
 `;
+
+
+export const ImageAndTextWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 20rem;
+
+  & img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20rem;
+    z-index: -1;
+  }
+
+  & p {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 800;
+  }
+
+  & button {
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    height: 4rem;
+    font-weight: 800;
+    border: transparent;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+`;
+
+export const Wrapper = styled.div`
+  position: absolute;
+  background-color: rgba(70, 108, 170, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  left: 0;
+  top: 0;
+  flex-flow: column wrap;
+  align-items: center;
+`;
+
