@@ -16,7 +16,7 @@ export const Header = styled.div`
 export const ContentWrapper = styled.div`
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 export const SunWrapper = styled.div`
@@ -44,13 +44,13 @@ export const CloudWrapper = styled.div`
   word-wrap: break-word;
   font-size: 2rem;
   text-align: center;
+  margin: 0 8rem;
 
   & img {
     width: 10rem;
     height: 10rem;
   }
 `;
-
 
 export const ImageAndTextWrapper = styled.div`
   position: relative;
@@ -94,4 +94,3 @@ export const Wrapper = styled.div`
   flex-flow: column wrap;
   align-items: center;
 `;
-
