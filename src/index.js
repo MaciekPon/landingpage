@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Heading from "./components/Heading";
 import Content from "./components/Content";
 import Opinions from "./components/Opinions";
+import Faq from "./components/Faq";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Heading />
       <Content />
       <Opinions />
+      <Faq />
     </div>
   </React.StrictMode>,
   document.getElementById("root")
