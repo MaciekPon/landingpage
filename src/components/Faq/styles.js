@@ -23,7 +23,7 @@ export const ListOfQuestions = styled.div`
   justify-content: center;
   width: 85%;
   height: 60%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 `;
 
 export const List = styled.ul`
@@ -49,4 +49,14 @@ export const ListItem = styled.li`
   &:nth-child(3) {
     border-bottom: 1px solid black;
   }
+`;
+
+export const StdBtn = styled.button`
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  border-radius: 1rem;
+  font-weight: 800;
+  padding: 2rem;
+  text-align: center;
 `;

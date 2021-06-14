@@ -1,7 +1,6 @@
-import { MainWrapper, ListOfQuestions, List, ListItem } from "./styles";
+import { MainWrapper, ListOfQuestions, List, ListItem, StdBtn } from "./styles";
 
 const Faq = () => {
-  
   return (
     <MainWrapper>
       <p>FAQ</p>
@@ -18,6 +17,7 @@ const Faq = () => {
           </ListItem>
         </List>
       </ListOfQuestions>
+      <StdBtn>GET FREE E-BOOK</StdBtn>
     </MainWrapper>
   );
 };
