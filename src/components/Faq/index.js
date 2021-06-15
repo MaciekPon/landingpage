@@ -1,22 +1,17 @@
-import { MainWrapper, ListOfQuestions, List, ListItem, StdBtn } from "./styles";
+import FaqElement from "../FaqElement";
+import { MainWrapper, Questions, StdBtn } from "./styles";
+
+import FaqData from "../../data/faqData.json";
 
 const Faq = () => {
   return (
     <MainWrapper>
       <p>FAQ</p>
-      <ListOfQuestions>
-        <List>
-          <ListItem>
-            Which beaches are available on my Base Tide Pro<span> +</span>
-          </ListItem>
-          <ListItem>
-            How does tempreature impact my watch<span> +</span>
-          </ListItem>
-          <ListItem>
-            How do i reset my digital tide watch<span> +</span>
-          </ListItem>
-        </List>
-      </ListOfQuestions>
+      <Questions>
+        <FaqElement property={FaqData.first} />
+        <FaqElement property={FaqData.second} />
+        <FaqElement property={FaqData.third} />
+      </Questions>
       <StdBtn>GET FREE E-BOOK</StdBtn>
     </MainWrapper>
   );
