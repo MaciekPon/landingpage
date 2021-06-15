@@ -6,7 +6,8 @@ import {
   PersonImage,
   PersonOpionion,
   LeftArrow,
-  RightArrow
+  RightArrow,
+  PersonCardWrapper
 } from "./styles";
 
 
@@ -19,6 +20,7 @@ const Opinions = () => {
       <PersonWrapper>
         <PersonInfo>
             <LeftArrow />
+            <PersonCardWrapper>
           <PersonImage>Zdjecie czlwieka</PersonImage>
           <PersonOpionion>
             <p>
@@ -26,6 +28,7 @@ const Opinions = () => {
               opinion xxxxxxxxxxxxxx . x x x x xxx x x xx x
             </p>
           </PersonOpionion>
+          </PersonCardWrapper>
           <RightArrow />
         </PersonInfo>
       </PersonWrapper>
