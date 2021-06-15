@@ -4,10 +4,9 @@ import "./index.css";
 import NavBar from "./components/NavBar";
 import Heading from "./components/Heading";
 import Content from "./components/Content";
-import Opinions from "./components/Opinions";
+import Opinions from "./containers/Opinions";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
-
 
 ReactDOM.render(
   <React.StrictMode>

@@ -54,10 +54,21 @@ export const PersonOpionion = styled.div`
   align-items: center;
 `;
 
+export const PersonCardWrapper = styled.div`
+  display: flex;
+  height: 20rem;
+  align-items: center;
+  border: 1px solid black;
+`;
+
 export const LeftArrow = styled(AiOutlineArrowLeft)`
+  width: 8rem;
+  height: 8rem;
   color: rgb(70, 108, 170);
 `;
 
 export const RightArrow = styled(AiOutlineArrowRight)`
+  width: 8rem;
+  height: 8rem;
   color: rgb(70, 108, 170);
 `;
