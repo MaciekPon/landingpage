@@ -4,10 +4,6 @@ import { MainWrapper, Questions, StdBtn } from "./styles";
 import FaqData from "../../data/faqData.json";
 
 const Faq = () => {
-  const borderStyles = {
-    borderBottom: "1px solid black",
-  };
-
   return (
     <MainWrapper>
       <p>FAQ</p>
