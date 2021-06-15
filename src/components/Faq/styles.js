@@ -8,6 +8,7 @@ export const MainWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 2rem;
 
   & p {
     font-size: 4rem;
