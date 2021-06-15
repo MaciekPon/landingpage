@@ -1,0 +1,14 @@
+[
+  {
+    "image": "/images/person1.jpg",
+    "text": "Lorem Ipsum lorem ipsum lorem ipsum" 
+  },
+  {
+    "image": "/images/person2.jpg",
+    "text": "Lorem Ipsum lorem ipsum lorem ipsum" 
+  },
+  {
+    "image": "/images/Person3.jpg",
+    "text": "Lorem Ipsum lorem ipsum lorem ipsum" 
+  }
+]
