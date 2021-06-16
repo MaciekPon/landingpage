@@ -1,32 +1,33 @@
 import styled from "styled-components";
 
 export const PersonImage = styled.div`
-  border: 3px solid black;
-  height: 15rem;
+  border: 3px solid #000;
+  height: 19rem;
   width: 15rem;
-  margin-left: 2rem;
-  
+
   & img {
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
   }
 `;
 
 export const PersonOpionion = styled.div`
-  width: 50%;
+  width: 20rem;
   word-wrap: break-word;
-  font-size: 2rem;
+  font-size: 1.5rem;
   height: 15rem;
-  margin: 0 3rem;
   text-align: center;
   display: flex;
   align-items: center;
+  margin-left: 6rem;
 `;
 
 export const PersonCardWrapper = styled.div`
   display: flex;
+  width: 50rem;
   height: 20rem;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid #000;
   margin: 0 1rem;
+  padding: 2rem;
 `;
