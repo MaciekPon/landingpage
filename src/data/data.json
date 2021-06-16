@@ -1,14 +1,14 @@
 [
   {
     "image": "/images/person1.jpg",
-    "text": "Lorem Ipsum lorem ipsum lorem ipsum" 
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor massa in nulla aliquam sagittis." 
   },
   {
     "image": "/images/person2.jpg",
-    "text": "Lorem Ipsum lorem ipsum lorem ipsum" 
+    "text": "Donec sed euismod mauris, eu accumsan odio. Nullam mi sem, pharetra quis lacinia eget, cursus sit amet felis." 
   },
   {
     "image": "/images/Person3.jpg",
-    "text": "Lorem Ipsum lorem ipsum lorem ipsum" 
+    "text": "Donec egestas magna maximus sem convallis, eu lobortis dolor faucibus." 
   }
 ]

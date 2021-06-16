@@ -1,9 +1,9 @@
 import { PersonImage, PersonOpionion, PersonCardWrapper } from "./styles";
 
 const PersonCard = ({property}) => {
-    const {index, image, text} = property;
+    const { image, text} = property;
   return (
-    <PersonCardWrapper id={index}>
+    <PersonCardWrapper>
       <PersonImage><img src={image} alt="person" /></PersonImage>
       <PersonOpionion>
         <p>{text}</p>
