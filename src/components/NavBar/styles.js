@@ -41,4 +41,12 @@ export const ListItem = styled.li`
   border: transparent;
   cursor: pointer;
   font-size: 1.5rem;
+
+  &:hover {
+    color: rgb(70, 108, 170);
+  }
+`;
+
+export const NavLink = styled.a`
+  text-decoration: none;
 `;

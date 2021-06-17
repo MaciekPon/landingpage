@@ -1,4 +1,4 @@
-import { Navigation, Logo, List, ListItem } from "./styles";
+import { Navigation, Logo, List, ListItem, NavLink } from "./styles";
 
 const NavBar = () => {
   return (
@@ -7,9 +7,9 @@ const NavBar = () => {
         <img src="images/logo.svg" alt="logo" />
       </Logo>
       <List>
-        <ListItem>OPINIONS</ListItem>
-        <ListItem>CONTENT</ListItem>
-        <ListItem>FAQ</ListItem>
+        <NavLink href="#opinions"><ListItem>OPINIONS</ListItem></NavLink>
+        <NavLink href="#content"><ListItem>CONTENT</ListItem></NavLink>
+        <NavLink href="#faq"><ListItem>FAQ</ListItem></NavLink>
       </List>
     </Navigation>
   );

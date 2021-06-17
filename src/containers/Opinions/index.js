@@ -31,7 +31,7 @@ const Opinions = () => {
   };
 
   return (
-    <SliderWrapper>
+    <SliderWrapper id="opinions">
       <Title>
         <p>See what people think about our e-book</p>
       </Title>
