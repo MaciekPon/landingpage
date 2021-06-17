@@ -10,6 +10,7 @@ export const MainWrapper = styled.div`
   height: 50rem;
   background: url(./images/background.jpg) no-repeat;
   background-size: cover;
+
 `;
 
 export const Wrapper = styled.div`
@@ -53,34 +54,34 @@ export const Form = styled.form`
   & p:nth-child(1) {
     line-height: 1rem;
     font-size: 2.5rem;
-    color:  rgb(70, 108, 170);
+    color: rgb(70, 108, 170);
   }
+`;
 
-  & input {
-    border: 3px solid grey;
-    height: 3rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    background-color: rgb(241, 238, 238);
-    color: #000;
-    width: 20rem;
-    padding-left: 1rem;
-  }
+export const Input = styled.input`
+  border: 3px solid grey;
+  height: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgb(241, 238, 238);
+  color: #000;
+  width: 20rem;
+  padding-left: 1rem;
 
-  & input:focus {
-      border: 4px solid rgb(70, 108, 170);
-      outline: none;
+  &:focus {
+    border: 4px solid rgb(70, 108, 170);
+    outline: none;
   }
+`;
 
-  & button {
-    position: absolute;
-    height: 4rem;
-    background-color: rgb(70, 108, 170);
-    color: #fff;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    text-align: center;
-    bottom: 2.5rem;
-    left: 7.5rem;
-  }
+export const StdBtn = styled.button`
+  position: absolute;
+  height: 4rem;
+  background-color: rgb(70, 108, 170);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  top: 25.5rem;
+  right: 7.5rem;
 `;
