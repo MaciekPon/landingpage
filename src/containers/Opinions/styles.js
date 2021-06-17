@@ -10,6 +10,7 @@ export const SliderWrapper = styled.div`
   flex-direction: column;
   text-align: center;
   align-items: center;
+  margin-bottom: 7rem;
 `;
 
 export const PersonWrapper = styled.div`
@@ -21,16 +22,14 @@ export const PersonWrapper = styled.div`
 export const PersonInfo = styled.div`
   display: flex;
   width: 85%;
-  height: auto;
   background-color: rgb(240, 240, 240);
-  text-align: left;
   align-items: center;
   padding: 2rem;
   justify-content: space-between;
 
   & button {
     border: transparent;
-    width:8rem;
+    width: 8rem;
     height: 8rem;
     cursor: pointer;
   }
