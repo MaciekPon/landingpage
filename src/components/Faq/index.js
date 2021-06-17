@@ -5,7 +5,7 @@ import FaqData from "../../data/faqData.json";
 
 const Faq = () => {
   return (
-    <MainWrapper>
+    <MainWrapper id="faq">
       <p>FAQ</p>
       <Questions>
         <FaqElement property={FaqData.first} />

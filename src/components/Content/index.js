@@ -11,7 +11,7 @@ import {
 const Content = () => {
   return (
     <>
-      <MainWrapper>
+      <MainWrapper id="content">
         <Header>
           <h2>See what is included in our e-book</h2>
         </Header>
