@@ -7,7 +7,8 @@ import {
   ImageAndTextWrapper,
   Wrapper,
   ToHeadingBtn,
-  Span
+  Span,
+  Paragraprh
 } from "./styles";
 
 const Content = () => {
@@ -45,7 +46,7 @@ const Content = () => {
       <ImageAndTextWrapper>
         <Wrapper>
           <img src="/images/unnamed.jpg" alt="plants" />
-          <p>Do you want to get to know plants?</p>
+          <Paragraprh>Do you want to get to know plants?</Paragraprh>
           <a href="#heading"><ToHeadingBtn>GET FREE E-BOOK</ToHeadingBtn></a>
         </Wrapper>
       </ImageAndTextWrapper>
