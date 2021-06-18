@@ -26,6 +26,11 @@ export const Paragraph = styled.p`
   @media (max-width: 768px) {
     font-size: 1.5rem;
   }
+  @media (max-width: 520px) {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 1rem;
+  }
 `;
 
 export const StdSpan = styled.span`
@@ -33,28 +38,28 @@ export const StdSpan = styled.span`
   top: 0.7rem;
   left: 2rem;
 
+  & strong {
+    margin-top: 1rem;
+    display: block;
+  }
+
   &:nth-child(2) {
     position: absolute;
     top: 3.5rem;
     left: 2rem;
-
-    & strong {
-      display: block;
-    }
 
     @media (max-width: 520px) {
       font-size: 1rem;
       position: static;
     }
   }
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 
   @media (max-width: 520px) {
     font-size: 1rem;
     position: static;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
   }
 `;
 
