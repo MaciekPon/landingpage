@@ -104,7 +104,7 @@ export const Form = styled.form`
   align-items: center;
   flex-flow: wrap column;
   background-color: rgba(255, 255, 255, 0.8);
-  height: 30rem;
+  height: 35rem;
   width: 23rem;
   margin-top: 4rem;
   margin-right: 15rem;
@@ -173,7 +173,7 @@ export const Input = styled.input`
   margin-bottom: 1rem;
   background-color: rgb(241, 238, 238);
   color: #000;
-  width: 20rem;
+  width: 18rem;
   padding-left: 1rem;
 
   &:focus {
@@ -210,6 +210,7 @@ export const SubmitInput = styled.input`
   cursor: pointer;
   border-radius: 1rem;
   height: 4rem;
+  width: 15rem;
 
   &:hover {
     transform: scale(1.1);
