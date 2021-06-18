@@ -163,6 +163,7 @@ export const Paragraprh = styled.p`
   @media (max-width: 520px) {
     font-size: 2rem;
     text-align: center;
+    line-height: 2rem;
   }
 `;
 
@@ -211,9 +212,6 @@ export const ToHeadingBtn = styled.button`
   }
 
   @media (max-width: 520px) {
-    position: absolute;
-    top: 10rem;
-    left: 2.5rem;
     width: 15rem;
     padding: 0 2rem;
     text-align: center;
