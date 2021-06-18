@@ -50,7 +50,11 @@ export const Content = styled.div`
 
   & span {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 4rem;
+
+    @media(max-width: 520px) {
+      font-size: 1.5rem;
+    }
   }
 
   @media (max-width: 520px) {
