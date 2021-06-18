@@ -46,11 +46,14 @@ export const List = styled.ul`
   margin-right: 7rem;
   list-style: none;
 
+  @media (max-width: 1024px) {
+    margin-right: 5rem;
+  }
+
   @media (max-width: 768px) {
     margin-right: 3rem;
-  @media (max-width: 520px) {
-    display: none;
   }
+
   @media (max-width: 520px) {
     display: none;
   }
@@ -67,13 +70,13 @@ export const ListItem = styled.li`
   &:hover {
     color: rgb(70, 108, 170);
   }
-    
-   @media (max-width: 520px) {
-    display: none;
+
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
+  }
 
   @media (max-width: 768px) {
     font-size: 1.2rem;
-  
   }
   @media (max-width: 520px) {
     display: none;
