@@ -52,7 +52,7 @@ export const Content = styled.div`
     display: inline-block;
     font-size: 4rem;
 
-    @media(max-width: 520px) {
+    @media (max-width: 520px) {
       font-size: 1.5rem;
     }
   }
@@ -119,37 +119,32 @@ export const Input = styled.input`
     outline: none;
   }
 
+  &:last-child {
+    background-color: rgb(70, 108, 170);
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1rem;
+    height: 4rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    @media (max-width: 520px) {
+      font-weight: 800;
+      height: 3rem;
+      width: 10rem;
+      padding: 0 2rem;
+      font-size: 0.6rem;
+    }
+  }
+
   @media (max-width: 520px) {
     font-size: 2rem;
     margin-bottom: 1rem;
     width: 9rem;
     height: 2.5rem;
     font-size: 0.8rem;
-  }
-`;
-
-export const StdInput = styled.button`
-  position: absolute;
-  height: 4rem;
-  background-color: rgb(70, 108, 170);
-  color: #fff;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
-  text-align: center;
-  top: 25.5rem;
-  right: 7.5rem;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  @media (max-width: 520px) {
-    top: 20rem;
-    left: 2.4rem;
-    font-size: 0.6rem;
-    font-weight: 800;
-    height: 3rem;
-    border-radius: 7px;
   }
 `;
