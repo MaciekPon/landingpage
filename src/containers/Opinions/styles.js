@@ -17,6 +17,10 @@ export const SliderWrapper = styled.div`
     font-size: 2.5rem;
     padding: 0;
   }
+
+  @media (max-width: 768px) {
+    margin-bottom: 3rem;
+  }
 `;
 
 export const PersonWrapper = styled.div`
@@ -50,6 +54,11 @@ export const PersonInfo = styled.div`
 export const Title = styled.div`
   color: rgb(70, 108, 170);
   font-weight: 800;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    text-align: center;
+  }
 `;
 
 const baseArrowStyles = css`
@@ -60,7 +69,10 @@ const baseArrowStyles = css`
   @media (max-width: 520px) {
     width: 2.5rem;
   }
-`;
+  @media (max-width: 768px) {
+    width: 3.5rem;
+  }
+  `;
 
 export const LeftArrow = styled(AiOutlineArrowLeft)`
   ${baseArrowStyles}

@@ -14,6 +14,10 @@ export const PersonCardWrapper = styled.div`
     padding: 1rem;
     flex-direction: column;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 1rem;
+  }
 `;
 
 export const PersonImage = styled.div`
@@ -46,5 +50,12 @@ export const PersonOpionion = styled.div`
     word-wrap: break-word;
     margin-left: 0;
     width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    margin-left: 1rem;
+    width: 50%;
   }
 `;
