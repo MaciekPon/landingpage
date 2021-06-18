@@ -9,14 +9,14 @@ export const PersonCardWrapper = styled.div`
   margin: 0 1rem;
   padding: 2rem;
 
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 1rem;
+  }
   @media (max-width: 520px) {
     width: 45rem;
     padding: 1rem;
     flex-direction: column;
-  }
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 1rem;
   }
 `;
 
@@ -45,17 +45,16 @@ export const PersonOpionion = styled.div`
   align-items: center;
   margin-left: 6rem;
 
-  @media (max-width: 520px) {
-    font-size: 0.9rem;
-    word-wrap: break-word;
-    margin-left: 0;
-    width: 100%;
-  }
-
   @media (max-width: 768px) {
     font-size: 1.2rem;
     word-wrap: break-word;
     margin-left: 1rem;
     width: 50%;
+  }
+  @media (max-width: 520px) {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    margin-left: 0;
+    width: 100%;
   }
 `;
