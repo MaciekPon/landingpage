@@ -9,6 +9,11 @@ export const PersonCardWrapper = styled.div`
   margin: 0 1rem;
   padding: 2rem;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding: 1rem;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     padding: 1rem;
