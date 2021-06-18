@@ -128,7 +128,7 @@ export const Form = styled.form`
 `;
 
 export const Title = styled.h2`
-  line-height: 1rem;
+  line-height: 2rem;
   font-size: 2.5rem;
   color: rgb(70, 108, 170);
 
