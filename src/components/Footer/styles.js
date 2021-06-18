@@ -22,6 +22,10 @@ export const MainWrapper = styled.div`
 
 export const Paragraph = styled.p`
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const StdSpan = styled.span`
@@ -34,19 +38,23 @@ export const StdSpan = styled.span`
     top: 3.5rem;
     left: 2rem;
 
+    & strong {
+      display: block;
+    }
+
     @media (max-width: 520px) {
       font-size: 1rem;
       position: static;
     }
   }
 
-  & strong {
-    display: block;
-  }
-
   @media (max-width: 520px) {
     font-size: 1rem;
     position: static;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
   }
 `;
 

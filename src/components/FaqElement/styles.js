@@ -14,6 +14,11 @@ export const MainWrapper = styled.div`
     font-size: 1.2rem;
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -32,7 +37,7 @@ export const Content = styled.div`
   }
 `;
 
-export const StdBtn = styled.button`
+export const ToHeadingBtn = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;

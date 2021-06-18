@@ -25,6 +25,12 @@ export const MainWrapper = styled.div`
     height: 20%;
     margin-top: 0;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 40%;
+    margin-top: 0;
+  }
 `;
 
 export const Questions = styled.div`
@@ -36,6 +42,12 @@ export const Questions = styled.div`
   width: 70%;
   height: 70%;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    height: 90%;
+    margin-top: 0;
+  }
 `;
 
 export const StdBtn = styled.button`

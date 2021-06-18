@@ -25,21 +25,28 @@ export const Logo = styled.div`
   & img {
     width: 4rem;
     height: 4rem;
+
+    @media (max-width: 768px) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 1rem;
+
     @media(max-width:520px) {
       width:3rem;
       height: 3rem;
     }
-  }
-  @media(max-width:520px) {
-    width: 3rem;
-    height: 3rem;
-`;
 
 export const List = styled.ul`
   display: flex;
   margin-right: 7rem;
   list-style: none;
 
+  @media (max-width: 768px) {
+    margin-right: 3rem;
   @media (max-width: 520px) {
     display: none;
   }
@@ -56,9 +63,13 @@ export const ListItem = styled.li`
   &:hover {
     color: rgb(70, 108, 170);
   }
-
-  @media (max-width: 520px) {
+    
+   @media (max-width: 520px) {
     display: none;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  
   }
 `;
 
