@@ -12,14 +12,13 @@ export const SliderWrapper = styled.div`
   align-items: center;
   margin-bottom: 7rem;
 
+  @media (max-width: 768px) {
+    margin-bottom: 3rem;
+  }
   @media (max-width: 520px) {
     width: 100%;
     font-size: 2.5rem;
     padding: 0;
-  }
-
-  @media (max-width: 768px) {
-    margin-bottom: 3rem;
   }
 `;
 
@@ -66,13 +65,13 @@ const baseArrowStyles = css`
   height: 4rem;
   color: rgb(70, 108, 170);
 
-  @media (max-width: 520px) {
-    width: 2.5rem;
-  }
   @media (max-width: 768px) {
     width: 3.5rem;
   }
-  `;
+  @media (max-width: 520px) {
+    width: 2.5rem;
+  }
+`;
 
 export const LeftArrow = styled(AiOutlineArrowLeft)`
   ${baseArrowStyles}
