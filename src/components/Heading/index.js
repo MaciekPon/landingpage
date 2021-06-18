@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { MainWrapper, Wrapper, Content, Form, StdInput, Input } from "./styles";
+import { MainWrapper, Wrapper, Content, Form, Input } from "./styles";
 
 const Heading = () => {
   const [name, setName] = useState("");
@@ -60,7 +60,7 @@ const Heading = () => {
             placeholder="Your e-mail address"
             required
           />
-          <StdInput type="submit">GET FREE E-BOOK</StdInput>
+          <Input type="submit" value="GET FREE E-BOOK" />
         </Form>
       </Wrapper>
     </MainWrapper>
