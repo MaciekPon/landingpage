@@ -34,11 +34,12 @@ export const Logo = styled.div`
 
   @media (max-width: 768px) {
     margin-left: 1rem;
-
-    @media(max-width:520px) {
-      width:3rem;
-      height: 3rem;
-    }
+  }
+  @media (max-width: 520px) {
+    width: 3rem;
+    height: 3rem;
+  }
+`;
 
 export const List = styled.ul`
   display: flex;
@@ -47,6 +48,9 @@ export const List = styled.ul`
 
   @media (max-width: 768px) {
     margin-right: 3rem;
+  @media (max-width: 520px) {
+    display: none;
+  }
   @media (max-width: 520px) {
     display: none;
   }
@@ -70,6 +74,9 @@ export const ListItem = styled.li`
   @media (max-width: 768px) {
     font-size: 1.2rem;
   
+  }
+  @media (max-width: 520px) {
+    display: none;
   }
 `;
 
