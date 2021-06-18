@@ -12,6 +12,12 @@ export const Header = styled.div`
   color: rgb(70, 108, 170);
   font-weight: 800;
 
+  @media (max-width: 1024px) {
+    font-size: 2.5em;
+    margin: 0 1rem;
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
     font-size: 2.3rem;
     margin: 0 1rem;
@@ -91,6 +97,11 @@ export const CloudWrapper = styled.div`
       height: 7rem;
     }
   }
+  @media (max-width: 1024px) {
+    margin: 0;
+    height: 18rem;
+    margin: 0 1.5rem;
+  }
 
   @media (max-width: 768px) {
     margin: 0;
@@ -139,6 +150,12 @@ export const Paragraprh = styled.p`
   color: #fff;
   font-weight: 800;
 
+  @media (max-width: 1024px) {
+    font-size: 3rem;
+    margin: 2rem 1rem;
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
     font-size: 3rem;
     text-align: center;
@@ -178,6 +195,13 @@ export const ToHeadingBtn = styled.button`
     color: rgb(70, 108, 170);
     transform: scale(1.1);
   }
+
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+    margin: 2rem;
+    text-align: center;
+  }
+
   @media (max-width: 520px) {
     position: absolute;
     top: 10rem;
