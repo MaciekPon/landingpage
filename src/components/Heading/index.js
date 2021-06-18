@@ -48,7 +48,9 @@ const Heading = () => {
           </p>
         </Content>
         <Form onSubmit={submitClick}>
-          <Title>Download <span>e-book</span></Title>
+          <Title>
+            Download <span>e-book</span>
+          </Title>
           <p>Fill in your details to get free ebook “All about plants”:</p>
           <Input
             onChange={(event) => setName(event.target.value)}
@@ -67,7 +69,6 @@ const Heading = () => {
             required
           />
           <SubmitInput type="submit" value="GET FREE E-BOOK" />
-
         </Form>
       </Wrapper>
     </MainWrapper>
