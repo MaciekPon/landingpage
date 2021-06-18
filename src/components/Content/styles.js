@@ -12,14 +12,13 @@ export const Header = styled.div`
   color: rgb(70, 108, 170);
   font-weight: 800;
 
-  @media (max-width: 520px) {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
   @media (max-width: 768px) {
     font-size: 2.3rem;
     margin: 0 1rem;
+    text-align: center;
+  }
+  @media (max-width: 520px) {
+    font-size: 1.8rem;
     text-align: center;
   }
 `;
@@ -48,22 +47,21 @@ export const SunWrapper = styled.div`
     width: 10rem;
     height: 10rem;
 
-    @media (max-width: 520px) {
-      width: 7rem;
-      height: 7rem;
-    }
     @media (max-width: 768px) {
       width: 8rem;
       height: 8rem;
     }
+    @media (max-width: 520px) {
+      width: 7rem;
+      height: 7rem;
+    }
   }
-
-  @media (max-width: 520px) {
+  @media (max-width: 768px) {
     font-size: 1.5rem;
     height: 18rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 520px) {
     font-size: 1.5rem;
     height: 18rem;
   }
@@ -84,23 +82,22 @@ export const CloudWrapper = styled.div`
     width: 10rem;
     height: 10rem;
 
-    @media (max-width: 520px) {
-      width: 7rem;
-      height: 7rem;
-    }
     @media (max-width: 768px) {
       width: 8rem;
       height: 8rem;
     }
+    @media (max-width: 520px) {
+      width: 7rem;
+      height: 7rem;
+    }
   }
 
-  @media (max-width: 520px) {
+  @media (max-width: 768px) {
     margin: 0;
     height: 18rem;
     font-size: 1.5rem;
   }
-
-  @media (max-width: 768px) {
+  @media (max-width: 520px) {
     margin: 0;
     height: 18rem;
     font-size: 1.5rem;
@@ -125,14 +122,14 @@ export const ImageAndTextWrapper = styled.div`
     }
   }
 
-  @media (max-width: 520px) {
-    display: flex;
-    font-size: 1rem;
-    flex-direction: column;
-  }
   @media (max-width: 768px) {
     display: flex;
     font-size: rem;
+    flex-direction: column;
+  }
+  @media (max-width: 520px) {
+    display: flex;
+    font-size: 1rem;
     flex-direction: column;
   }
 `;
@@ -142,12 +139,12 @@ export const Paragraprh = styled.p`
   color: #fff;
   font-weight: 800;
 
-  @media (max-width: 520px) {
-    font-size: 2rem;
-    text-align: center;
-  }
   @media (max-width: 768px) {
     font-size: 3rem;
+    text-align: center;
+  }
+  @media (max-width: 520px) {
+    font-size: 2rem;
     text-align: center;
   }
 `;
