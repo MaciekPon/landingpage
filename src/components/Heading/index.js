@@ -67,6 +67,7 @@ const Heading = () => {
             required
           />
           <SubmitInput type="submit" value="GET FREE E-BOOK" />
+
         </Form>
       </Wrapper>
     </MainWrapper>

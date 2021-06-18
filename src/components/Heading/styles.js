@@ -59,6 +59,7 @@ export const Content = styled.div`
 
   & span {
     display: block;
+
     font-size: 4rem;
 
     @media (max-width: 520px) {
@@ -68,6 +69,7 @@ export const Content = styled.div`
     @media (max-width: 768px) {
       font-size: 3rem;
     }
+
   }
 
   @media (max-width: 520px) {
@@ -158,6 +160,27 @@ export const Input = styled.input`
     outline: none;
   }
 
+  &:last-child {
+    background-color: rgb(70, 108, 170);
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1rem;
+    height: 4rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    @media (max-width: 520px) {
+      font-weight: 800;
+      height: 3rem;
+      width: 10rem;
+      padding: 0 2rem;
+      font-size: 0.6rem;
+    }
+  }
+
   @media (max-width: 520px) {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -221,3 +244,6 @@ export const SubmitInput = styled.input`
     height: 3rem;
   }
 `;
+
+`;
+
