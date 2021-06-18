@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 export const SliderWrapper = styled.div`
@@ -11,20 +11,31 @@ export const SliderWrapper = styled.div`
   text-align: center;
   align-items: center;
   margin-bottom: 7rem;
+
+  @media (max-width: 520px) {
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 0;
+  }
 `;
 
 export const PersonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 520px) {
+    width: 100%;
+    padding: 0;
+  }
 `;
 
 export const PersonInfo = styled.div`
   display: flex;
-  width: 85%;
+  width: 100%;
   background-color: rgb(240, 240, 240);
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   justify-content: space-between;
 
   & button {
@@ -32,6 +43,7 @@ export const PersonInfo = styled.div`
     width: 8rem;
     height: 8rem;
     cursor: pointer;
+    padding: 0;
   }
 `;
 
@@ -40,14 +52,20 @@ export const Title = styled.div`
   font-weight: 800;
 `;
 
-export const LeftArrow = styled(AiOutlineArrowLeft)`
+const baseArrowStyles = css`
   width: 4rem;
   height: 4rem;
   color: rgb(70, 108, 170);
+
+  @media (max-width: 520px) {
+    width: 2.5rem;
+  }
+`;
+
+export const LeftArrow = styled(AiOutlineArrowLeft)`
+  ${baseArrowStyles}
 `;
 
 export const RightArrow = styled(AiOutlineArrowRight)`
-  width: 4rem;
-  height: 4rem;
-  color: rgb(70, 108, 170);
+  ${baseArrowStyles}
 `;
