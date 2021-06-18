@@ -35,7 +35,7 @@ export const PersonInfo = styled.div`
   width: 100%;
   background-color: rgb(240, 240, 240);
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0;
   justify-content: space-between;
 
   & button {
