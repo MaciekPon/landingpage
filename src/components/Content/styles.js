@@ -202,6 +202,14 @@ export const ToHeadingBtn = styled.button`
     text-align: center;
   }
 
+  @media (max-width: 768px) {
+    width: 15rem;
+    padding: 0 2rem;
+    text-align: center;
+    height: 3rem;
+    font-size: 0.8rem;
+  }
+
   @media (max-width: 520px) {
     position: absolute;
     top: 10rem;
