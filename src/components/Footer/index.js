@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MainWrapper } from "./styles";
+import { MainWrapper, NavLink, StdSpan, Paragraph } from "./styles";
 
 const Footer = () => {
   var [date, setDate] = useState();
@@ -11,15 +11,16 @@ const Footer = () => {
 
   return (
     <MainWrapper>
-      <p>“All about plants” {CheckYear(date)}</p>
       <p>
-        <span>
+        <StdSpan>
           <strong>Any questions?</strong>
-        </span>
-        <span>
-          Contact us on <a href="mailto:example@plant.com">contact@plant.com</a>
-        </span>
+        </StdSpan>
+        <StdSpan>
+          Contact us on{" "}
+          <NavLink href="mailto:example@plant.com">contact@plant.com</NavLink>
+        </StdSpan>
       </p>
+      <Paragraph>“All about plants” {CheckYear(date)}</Paragraph>
     </MainWrapper>
   );
 };

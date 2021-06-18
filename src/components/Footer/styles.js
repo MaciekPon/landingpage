@@ -11,24 +11,50 @@ export const MainWrapper = styled.div`
   color: #fff;
   padding: 0 2rem;
 
-  & span {
-    position: absolute;
-    top: 0.7rem;
-    right: 2rem;
+  @media (max-width: 520px) {
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+`;
 
-  & span:nth-child(2) {
+export const Paragraph = styled.p`
+  text-align: center;
+`;
+
+export const StdSpan = styled.span`
+  position: absolute;
+  top: 0.7rem;
+  left: 2rem;
+
+  &:nth-child(2) {
     position: absolute;
     top: 3.5rem;
-    right: 2rem;
+    left: 2rem;
+
+    @media (max-width: 520px) {
+      font-size: 1rem;
+      position: static;
+    }
   }
 
-  & a {
-    text-decoration: none;
-    color: white;
+  & strong {
+    display: block;
   }
 
-  & a:hover {
+  @media (max-width: 520px) {
+    font-size: 1rem;
+    position: static;
+  }
+`;
+
+export const NavLink = styled.a`
+  text-decoration: none;
+  color: #fff;
+
+  & hover {
     color: rgb(70, 108, 170);
   }
 `;
