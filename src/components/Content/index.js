@@ -5,7 +5,8 @@ import {
   SunWrapper,
   CloudWrapper,
   ImageAndTextWrapper,
-  Wrapper
+  Wrapper,
+  ToHeadingBtn
 } from "./styles";
 
 const Content = () => {
@@ -47,7 +48,7 @@ const Content = () => {
         <Wrapper>
           <img src="/images/unnamed.jpg" alt="plants" />
           <p>Do you want to get to know plants?</p>
-          <button>GET FREE E-BOOK</button>
+          <a href="#heading"><ToHeadingBtn>GET FREE E-BOOK</ToHeadingBtn></a>
         </Wrapper>
       </ImageAndTextWrapper>
     </>

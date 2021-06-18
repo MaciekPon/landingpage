@@ -36,4 +36,14 @@ export const StdBtn = styled.button`
   font-weight: 800;
   padding: 2rem;
   text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(70, 108, 170);
+    transform: scale(1.1);
+  }
+`;
+
+export const NavLink = styled.a`
+  text-decoration: none;
 `;

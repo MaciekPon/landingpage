@@ -71,15 +71,20 @@ export const ImageAndTextWrapper = styled.div`
     color: #fff;
     font-weight: 800;
   }
+`;
 
-  & button {
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    height: 4rem;
-    font-weight: 800;
-    border: transparent;
-    margin-top: 0.5rem;
-    cursor: pointer;
+export const ToHeadingBtn = styled.button`
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  height: 4rem;
+  font-weight: 800;
+  border: transparent;
+  margin-top: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(70, 108, 170);
+    transform: scale(1.1);
   }
 `;
 
