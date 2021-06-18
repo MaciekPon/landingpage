@@ -27,6 +27,11 @@ export const PersonWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding: 0;
+  }
+
   @media (max-width: 520px) {
     width: 100%;
     padding: 0;

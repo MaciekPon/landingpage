@@ -51,7 +51,7 @@ const Heading = () => {
           <Title>
             Download <span>e-book</span>
           </Title>
-          <p>Fill in your details to get free ebook “All about plants”:</p>
+          <p>Fill in your details to get free ebook <span>“All about plants”:</span></p>
           <Input
             onChange={(event) => setName(event.target.value)}
             value={name}

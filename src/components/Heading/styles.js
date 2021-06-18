@@ -11,6 +11,12 @@ export const MainWrapper = styled.div`
   background: url(./images/background.jpg) no-repeat;
   background-size: cover;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 45rem;
+    background-size: 130% 100%;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     height: 45rem;
@@ -60,12 +66,22 @@ export const Content = styled.div`
     display: block;
     font-size: 4rem;
 
+    @media (max-width: 1024px) {
+      font-size: 3rem;
+    }
+
     @media (max-width: 768px) {
       font-size: 3rem;
     }
     @media (max-width: 520px) {
       font-size: 1.5rem;
     }
+  }
+  @media (max-width: 1024px) {
+    width: 60%;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    margin-left: 2rem;
   }
 
   @media (max-width: 768px) {
@@ -84,7 +100,6 @@ export const Content = styled.div`
 `;
 
 export const Form = styled.form`
-  position: relative;
   display: flex;
   align-items: center;
   flex-flow: wrap column;
@@ -100,6 +115,17 @@ export const Form = styled.form`
 
   & span {
     display: block;
+  }
+
+  @media (max-width: 1024px) {
+    width: 30%;
+    margin-right: 2rem;
+    height: 60%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   @media (max-width: 768px) {
@@ -155,26 +181,8 @@ export const Input = styled.input`
     outline: none;
   }
 
-  &:last-child {
-    background-color: rgb(70, 108, 170);
-    color: #fff;
-    padding: 1rem 2rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 1rem;
-    height: 4rem;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    @media (max-width: 520px) {
-      font-weight: 800;
-      height: 3rem;
-      width: 10rem;
-      padding: 0 2rem;
-      font-size: 0.6rem;
-    }
+  @media (max-width: 1024px) {
+    width: 15rem;
   }
 
   @media (max-width: 768px) {
@@ -194,27 +202,6 @@ export const Input = styled.input`
   }
 `;
 
-export const StdInput = styled.button`
-  position: absolute;
-  height: 4rem;
-  background-color: rgb(70, 108, 170);
-  color: #fff;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
-  text-align: center;
-  top: 25.5rem;
-  right: 7.5rem;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    width: 12rem;
-    height: 2.5rem;
-    font-size: 0.8rem;
-  }
-`;
-
 export const SubmitInput = styled.input`
   background-color: rgb(70, 108, 170);
   color: #fff;
@@ -226,6 +213,12 @@ export const SubmitInput = styled.input`
 
   &:hover {
     transform: scale(1.1);
+  }
+
+  @media (max-width: 1024px) {
+    padding: 1rem 2rem;
+    width: 15rem;
+    height: 3rem;
   }
 
   @media (max-width: 768px) {
