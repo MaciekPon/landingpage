@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
@@ -9,6 +9,11 @@ export const MainWrapper = styled.div`
   border-top: 1px solid black;
   padding: 1rem;
   font-size: 2rem;
+
+  @media (max-width: 520px) {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -20,6 +25,11 @@ export const Content = styled.div`
   margin-top: 1rem;
   font-size: 1.5rem;
   color: rgb(0, 0, 139);
+
+  @media (max-width: 520px) {
+    border: 1px solid rgb(70, 108, 170);
+    font-size: 1rem;
+  }
 `;
 
 export const StdBtn = styled.button`
@@ -29,15 +39,18 @@ export const StdBtn = styled.button`
 
   &:hover {
     color: pink;
-}
+  }
+`;
+
+const baseChangesButtons = css`
+  width: 2rem;
+  height: 2rem;
 `;
 
 export const Plus = styled(AiOutlinePlus)`
-  width: 2rem;
-  height: 2rem;
+  ${baseChangesButtons}
 `;
 
 export const Minus = styled(AiOutlineMinus)`
-  width: 2rem;
-  height: 2rem;
+  ${baseChangesButtons}
 `;

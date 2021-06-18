@@ -6,7 +6,8 @@ import {
   CloudWrapper,
   ImageAndTextWrapper,
   Wrapper,
-  ToHeadingBtn
+  ToHeadingBtn,
+  Span
 } from "./styles";
 
 const Content = () => {
@@ -20,24 +21,21 @@ const Content = () => {
           <SunWrapper>
             <img src="/images/sun.svg" alt="sun" />
             <p>
-              <strong>Lorem ipsum</strong>
-              <br />
+              <Span><strong>Lorem ipsum</strong></Span>
               Lorem ipsum lorem imsum lorem imsum{" "}
             </p>
           </SunWrapper>
           <CloudWrapper>
             <img src="images/cloud.svg" alt="cloud" />
             <p>
-              <strong>Lorem ipsum</strong>
-              <br />
+            <Span><strong>Lorem ipsum</strong></Span>
               Lorem ipsum lorem imsum lorem imsum
             </p>
           </CloudWrapper>
           <SunWrapper>
             <img src="/images/sun.svg" alt="sun" />
             <p>
-              <strong>Lorem ipsum</strong>
-              <br />
+            <Span><strong>Lorem ipsum</strong></Span>
               Lorem ipsum lorem imsum lorem imsum{" "}
             </p>
           </SunWrapper>

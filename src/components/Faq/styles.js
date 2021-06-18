@@ -14,6 +14,16 @@ export const MainWrapper = styled.div`
     font-size: 4rem;
     color: #fff;
     line-height: 1rem;
+
+    @media (max-width: 520px) {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 520px) {
+    width: 100%;
+    height: 20%;
+    margin-top: 0;
   }
 `;
 
