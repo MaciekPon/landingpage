@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Plus, Minus, StdBtn, MainWrapper, ContentWrapper, Content } from "./styles";
+import { Plus, Minus, MainWrapper, ContentWrapper, Content, ToHeadingBtn } from "./styles";
 
 const FaqElement = ({ property }) => {
   const { title, content } = property;
@@ -16,7 +16,7 @@ const FaqElement = ({ property }) => {
         <div>{title}</div>
         {isOpened && <Content>{content}</Content>}
       </ContentWrapper>
-      <StdBtn onClick={toggle}>{isOpened ? <Minus /> : <Plus />}</StdBtn>
+      <ToHeadingBtn onClick={toggle}>{isOpened ? <Minus /> : <Plus />}</ToHeadingBtn>
     </MainWrapper>
   );
 };
