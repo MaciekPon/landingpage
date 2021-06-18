@@ -67,7 +67,7 @@ export const NavLink = styled.a`
   text-decoration: none;
   color: #fff;
 
-  & hover {
+  &:hover {
     color: rgb(70, 108, 170);
   }
 `;
