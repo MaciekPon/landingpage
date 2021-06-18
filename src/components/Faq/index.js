@@ -1,5 +1,5 @@
 import FaqElement from "../FaqElement";
-import { MainWrapper, Questions, StdBtn } from "./styles";
+import { MainWrapper, Questions, StdBtn, NavLink } from "./styles";
 
 import FaqData from "../../data/faqData.json";
 
@@ -12,7 +12,7 @@ const Faq = () => {
         <FaqElement property={FaqData.second} />
         <FaqElement property={FaqData.third} />
       </Questions>
-      <StdBtn>GET FREE E-BOOK</StdBtn>
+      <NavLink href="#heading"><StdBtn>GET FREE E-BOOK</StdBtn></NavLink>
     </MainWrapper>
   );
 };

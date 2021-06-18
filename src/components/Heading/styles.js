@@ -74,7 +74,7 @@ export const Input = styled.input`
   }
 `;
 
-export const StdBtn = styled.button`
+export const StdInput = styled.button`
   position: absolute;
   height: 4rem;
   background-color: rgb(70, 108, 170);
@@ -84,4 +84,9 @@ export const StdBtn = styled.button`
   text-align: center;
   top: 25.5rem;
   right: 7.5rem;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
