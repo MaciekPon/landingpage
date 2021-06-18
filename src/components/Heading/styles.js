@@ -16,6 +16,12 @@ export const MainWrapper = styled.div`
     height: 40rem;
     background-size: 150% 100%;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 45rem;
+    background-size: 130% 100%;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -32,12 +38,15 @@ export const Wrapper = styled.div`
     rgba(255, 255, 255, 0) 47%
   );
 
-  @media(max-width: 520px) {
+  @media (max-width: 520px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.4);
-    );
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
   }
 `;
 
@@ -49,8 +58,16 @@ export const Content = styled.div`
   font-size: 4rem;
 
   & span {
-    display: inline-block;
-    font-size: 1.5rem;
+    display: block;
+    font-size: 4rem;
+
+    @media (max-width: 520px) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 3rem;
+    }
   }
 
   @media (max-width: 520px) {
@@ -59,6 +76,12 @@ export const Content = styled.div`
     text-align: center;
     margin-left: 0;
     width: 100%;
+  }
+  @media (max-width: 768px) {
+    width: 50%;
+    margin-right: 1rem;
+    font-size: 2.3rem;
+    margin-left: 2rem;
   }
 `;
 
@@ -77,15 +100,8 @@ export const Form = styled.form`
   word-wrap: break-word;
   text-align: center;
 
-  & p:nth-child(1) {
-    line-height: 1rem;
-    font-size: 2.5rem;
-    color: rgb(70, 108, 170);
-
-    @media (max-width: 520px) {
-      font-size: 1.2rem;
-      line-height: 1.5rem;
-    }
+  & span {
+    display: block;
   }
 
   @media (max-width: 520px) {
@@ -97,6 +113,33 @@ export const Form = styled.form`
     align-items: center;
     padding: 1rem 2rem;
     background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  @media (max-width: 768px) {
+    width: 35%;
+    margin-right: 2rem;
+    height: 55%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+`;
+
+export const Title = styled.h2`
+  line-height: 1rem;
+  font-size: 2.5rem;
+  color: rgb(70, 108, 170);
+
+  @media (max-width: 520px) {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    line-height: 2rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -122,6 +165,14 @@ export const Input = styled.input`
     height: 2.5rem;
     font-size: 0.8rem;
   }
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 13rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
 `;
 
 export const StdInput = styled.button`
@@ -136,16 +187,37 @@ export const StdInput = styled.button`
   right: 7.5rem;
   cursor: pointer;
 
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+`;
+
+export const SubmitInput = styled.input`
+  background-color: rgb(70, 108, 170);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  height: 4rem;
+
   &:hover {
     transform: scale(1.1);
   }
-
   @media (max-width: 520px) {
-    top: 20rem;
-    left: 2.4rem;
-    font-size: 0.6rem;
     font-weight: 800;
     height: 3rem;
-    border-radius: 7px;
+    width: 10rem;
+    padding: 0 2rem;
+    font-size: 0.6rem;
+  }
+  @media (max-width: 768px) {
+    padding: 1rem 2rem;
+    width: 15rem;
+    height: 3rem;
   }
 `;

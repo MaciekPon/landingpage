@@ -1,6 +1,14 @@
 import { useState } from "react";
 
-import { MainWrapper, Wrapper, Content, Form, StdInput, Input } from "./styles";
+import {
+  MainWrapper,
+  Wrapper,
+  Content,
+  Form,
+  Input,
+  SubmitInput,
+  Title,
+} from "./styles";
 
 const Heading = () => {
   const [name, setName] = useState("");
@@ -40,9 +48,7 @@ const Heading = () => {
           </p>
         </Content>
         <Form onSubmit={submitClick}>
-          <p>
-            <strong>Download e-book</strong>
-          </p>
+          <Title>Download <span>e-book</span></Title>
           <p>Fill in your details to get free ebook “All about plants”:</p>
           <Input
             onChange={(event) => setName(event.target.value)}
@@ -60,7 +66,7 @@ const Heading = () => {
             placeholder="Your e-mail address"
             required
           />
-          <StdInput type="submit">GET FREE E-BOOK</StdInput>
+          <SubmitInput type="submit" value="GET FREE E-BOOK" />
         </Form>
       </Wrapper>
     </MainWrapper>
