@@ -11,6 +11,11 @@ export const MainWrapper = styled.div`
   background: url(./images/background.jpg) no-repeat;
   background-size: cover;
 
+  @media (max-width: 520px) {
+    width: 100%;
+    height: 40rem;
+    background-size: 150% 100%;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -26,6 +31,14 @@ export const Wrapper = styled.div`
     rgba(15, 15, 15, 1) 1%,
     rgba(255, 255, 255, 0) 47%
   );
+
+  @media(max-width: 520px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    );
+  }
 `;
 
 export const Content = styled.div`
@@ -34,6 +47,19 @@ export const Content = styled.div`
   width: 45rem;
   color: #fff;
   font-size: 4rem;
+
+  & span {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 520px) {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
 `;
 
 export const Form = styled.form`
@@ -41,7 +67,7 @@ export const Form = styled.form`
   display: flex;
   align-items: center;
   flex-flow: wrap column;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   height: 30rem;
   width: 23rem;
   margin-top: 4rem;
@@ -55,6 +81,22 @@ export const Form = styled.form`
     line-height: 1rem;
     font-size: 2.5rem;
     color: rgb(70, 108, 170);
+
+    @media (max-width: 520px) {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  @media (max-width: 520px) {
+    width: 55%;
+    margin-right: 0;
+    height: 55%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 `;
 
@@ -72,6 +114,14 @@ export const Input = styled.input`
     border: 4px solid rgb(70, 108, 170);
     outline: none;
   }
+
+  @media (max-width: 520px) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 9rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
 `;
 
 export const StdInput = styled.button`
@@ -88,5 +138,14 @@ export const StdInput = styled.button`
 
   &:hover {
     transform: scale(1.1);
+  }
+
+  @media (max-width: 520px) {
+    top: 20rem;
+    left: 2.4rem;
+    font-size: 0.6rem;
+    font-weight: 800;
+    height: 3rem;
+    border-radius: 7px;
   }
 `;
