@@ -33,7 +33,7 @@ export const StyledBurger = styled.button`
 
       :first-child {
         transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-        background-color: ${({ open }) => (open ? "black" : "white")};
+        background-color: #fff;
       }
 
       :nth-child(2) {
@@ -44,7 +44,7 @@ export const StyledBurger = styled.button`
 
       :nth-child(3) {
         transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-        background-color: ${({ open }) => (open ? "black" : "white")};
+        background-color: #fff;
       }
     }
   }

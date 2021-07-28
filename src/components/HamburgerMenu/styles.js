@@ -8,7 +8,7 @@ export const StyledMenu = styled.nav`
     flex-direction: column;
     justify-content: center;
     background: #fff;
-    height: 100vh;
+    height: 90vh;
     width: 16rem;
     text-align: left;
     padding: 2rem;
