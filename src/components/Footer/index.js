@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MainWrapper, NavLink, StdSpan, Paragraph } from "./styles";
 
 const Footer = () => {
-  var [date, setDate] = useState();
+  const [date, setDate] = useState();
 
   const CheckYear = (yr) => {
     var today = new Date();
@@ -26,3 +26,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+

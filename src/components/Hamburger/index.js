@@ -1,4 +1,3 @@
-import { bool, func } from 'prop-types';
 import { StyledBurger } from './styles';
 const Hamburger = ({ open, setOpen }) => {
   return (
@@ -9,8 +8,4 @@ const Hamburger = ({ open, setOpen }) => {
     </StyledBurger>
   )
 }
-Hamburger.propTypes = {
-  open: bool.isRequired,
-  setOpen: func.isRequired,
-};
 export default Hamburger;

@@ -1,4 +1,3 @@
-import { bool } from "prop-types";
 import { StyledMenu } from "./styles";
 const HamburgerMenu = ({ open }) => {
   return (
@@ -16,8 +15,5 @@ const HamburgerMenu = ({ open }) => {
       </ul>
     </StyledMenu>
   );
-};
-HamburgerMenu.propTypes = {
-  open: bool.isRequired,
 };
 export default HamburgerMenu;

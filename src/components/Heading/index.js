@@ -17,7 +17,6 @@ const Heading = () => {
   const submitClick = () => {
     if ({ formValidation }) {
       alert("Thank You for downloading our e-book!");
-      return true;
     } else {
       return false;
     }
@@ -29,9 +28,7 @@ const Heading = () => {
     }
 
     if (
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z]+)$/.test(
-        email
-      )
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z]+)$/.test(email)
     ) {
       return false;
     }
